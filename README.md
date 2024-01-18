@@ -46,7 +46,8 @@ The runtime for the core simulations in `dormancy-tradeoff-3sppsims.R`
 (Fig 3 in ms) is likely to be on the order of days (or at least many
 hours). To save having to rerun all simulations, all outputs from
 `dormancy-tradeoff-3sppsims.R` and `dormancy-tradeoff-3sppsims-chemo.R`
-are provided as individual zipped csv files in the latest release
+are provided as individual zipped csv files in the latest
+[release](https://github.com/andrewletten/dormancy-tradeoff-code/releases/tag/latest)
 associated with this repo. As described below, these can be downloaded
 using the `piggyback` package, and distributed into the appropriate
 directory structure for importing into `dormancy-tradeoff-fig3.R`. Note,
