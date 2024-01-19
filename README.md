@@ -69,7 +69,7 @@ dir.create("data/N1N2_gz", recursive = TRUE) # gleaner and dormancy strategist
 dir.create("data/N1N3_gz", recursive = TRUE) # opportunist and dormancy strategist
 dir.create("data/N2N3_gz", recursive = TRUE) # gleaner and opportunist
 
-N1N2N3_files <- simnames$file_name[grep("N1N2N3_", simnames$file_name)]
+N1N2N3_files <- simnames$file_name[grep("^N1N2N3_", simnames$file_name)]
 pb_download(
   file = N1N2N3_files,
   dest = "data/N1N2N3_gz",
@@ -77,7 +77,7 @@ pb_download(
   tag = "latest"
 )
 
-N1N2_files <- simnames$file_name[grep("N1N2_", simnames$file_name)]
+N1N2_files <- simnames$file_name[grep("^N1N2_", simnames$file_name)]
 pb_download(
   file = N1N2_files,
   dest = "data/N1N2_gz",
@@ -85,7 +85,7 @@ pb_download(
   tag = "latest"
 )
 
-N1N3_files <- simnames$file_name[grep("N1N3_", simnames$file_name)]
+N1N3_files <- simnames$file_name[grep("^N1N3_", simnames$file_name)]
 pb_download(
   file = N1N3_files,
   dest = "data/N1N3_gz",
@@ -93,7 +93,7 @@ pb_download(
   tag = "latest"
 )
 
-N2N3_files <- simnames$file_name[grep("N2N3_", simnames$file_name)]
+N2N3_files <- simnames$file_name[grep("^N2N3_", simnames$file_name)]
 pb_download(
   file = N2N3_files,
   dest = "data/N2N3_gz",
