@@ -12,8 +12,8 @@ library(ggplot2)
 library(cowplot)
 library(patchwork)
 theme_set(theme_cowplot()) 
-source("dormancy-tradeoff-functions.R")
-source("dormancy-tradeoff-spp-params.R")
+source("code/dormancy-tradeoff-functions.R")
+source("code/dormancy-tradeoff-spp-params.R")
 
 ## Initialise state variables -------------------------------------------------
 state <- c(N1_activ = 100, # initial density of active phase of dormant strategist
