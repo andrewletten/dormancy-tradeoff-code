@@ -80,7 +80,7 @@ for (i in 2:length(respdf$N2)){
 }
 
 # Per capita growth response of active phase of dormancy strategist 
-percap_active = monod_func(parameters["mu1"], ks = parameters["Ks1"], respdf$R[-1]) - parameters["m"]
+percap_active <- monod_func(parameters["mu1"], ks = parameters["Ks1"], respdf$R[-1]) - parameters["m"]
 
 
 percapdf <- data.frame(percap_dorm_integrated = percapNdorm, 
