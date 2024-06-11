@@ -21,8 +21,8 @@ outcomes <- summarise_outcomes(dat_list)
 ### Make heat map of competitive outcomes -------------------------------------
 ## Uncomment`load(file = "data/3spp-coexistoutline.Rdata")` to load the outline 
 ## for the 3 species coexistence region and delete `= NULL` from call to `plot_comp_resource`.
-load(file = "data/3spp-coexistoutline.Rdata") 
-simplot <- plot_comp_resource(outcomes, outline)
+#load(file = "data/3spp-coexistoutline.Rdata") 
+simplot <- plot_comp_resource(outcomes, outline = outline) 
 simplot
 
 ############################
