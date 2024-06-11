@@ -32,7 +32,7 @@ ressize <-  seq(5, 20, 1) # Resource concentrations to match pulsed dynamics
 
 dat_list = list()
 for (i in 1:length(ressize)){
-  totaltime <- 2000
+  totaltime <- 10000
   times <- seq(0, totaltime, by = 1)
   start_time <- Sys.time()
   state["R"] = ressize[i]
