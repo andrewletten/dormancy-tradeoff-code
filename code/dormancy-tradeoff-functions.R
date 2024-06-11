@@ -68,7 +68,7 @@ coexist_or_not <- function(dat_list, respulsecombo){
     totaltime <- nrow(dat_list[[i]])
     dat_list[[i]]$N1_tot <- dat_list[[i]]$N1_activ + dat_list[[i]]$N1_dorm
     lastsamp[[i]] <- data.frame(
-      dat_list[[i]][((totaltime) - (pulsefreq)):(totaltime),] > 1
+      dat_list[[i]][((totaltime) - (pulsefreq)):(totaltime),] > 0.0000001
     ) %>% 
       summarize(across(c(N1_tot, N2, N3), all)) 
     print(paste("sim", i))
