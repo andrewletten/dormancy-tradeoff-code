@@ -30,6 +30,12 @@ Letten, Yamamichi, Richardson and Ke. Microbial dormancy supports multi-species 
 
 `dormancy-tradeoff-functions.R` - Functions for defining ODE, extracting and wrangling saved sims, plotting etc.
 
+`dormancy-tradeoff-figS6` — Add the analytically derived per capita growth function to the simulated per capita growth responses in Fig 1c in ms (Fig S6 in SI).
+
+`dormancy-tradeoff-figS1` — Simulate competition between a gleaner and a dormancy strategist under different dormancy and activation functional forms (Fig S1 in SI).
+
+`dormancy-tradeoff-figS5` — Using Floquet theory to determine competitive outcome between a gleaner and a dormancy strategist with different parameter combinations (Fig S5 in SI).
+
 #### Simulation outputs
 
 The runtime for the core simulations in `dormancy-tradeoff-3sppsims.R` (Fig 3 in ms) is likely to be on the order of days (or at least many hours). To save having to rerun all simulations, all outputs from `dormancy-tradeoff-3sppsims.R` and `dormancy-tradeoff-3sppsims-chemo.R` are provided as individual zipped csv files in the latest [release](https://github.com/andrewletten/dormancy-tradeoff-code/releases/tag/latest) associated with this repo. As described below, these can be downloaded using the `piggyback` package, and distributed into the appropriate directory structure for importing into `dormancy-tradeoff-fig3.R`. Note, the download time for each of the four batches of sim files (all 3 spp and the three pairwise dynamics) is likely to be on the order of hours (or at least many mins, but not days!). Note also that the code in `dormancy-tradeoff-fig3.R` can tested on one batch of data at a time (i.e. there is no need to download all four batches at the same time). Finally, please note there are 960 zipped csv files in the release with a combined size of ~15GB. 
