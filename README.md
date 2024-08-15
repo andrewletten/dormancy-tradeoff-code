@@ -40,6 +40,18 @@ continuous/chemostat resource supply.
 `dormancy-tradeoff-functions.R` - Functions for defining ODE, extracting
 and wrangling saved sims, plotting etc.
 
+`dormancy-tradeoff-figS6` — Add the analytically derived per capita
+growth function to the simulated per capita growth responses in Fig 1c
+in ms (Fig S6 in SI).
+
+`dormancy-tradeoff-figS1` — Simulate competition between a gleaner and a
+dormancy strategist under different dormancy and activation functional
+forms (Fig S1 in SI).
+
+`dormancy-tradeoff-figS5` — Using Floquet theory to determine
+competitive outcome between a gleaner and a dormancy strategist with
+different parameter combinations (Fig S5 in SI).
+
 #### Simulation outputs
 
 The runtime for the core simulations in `dormancy-tradeoff-3sppsims.R`
